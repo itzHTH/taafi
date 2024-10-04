@@ -10,8 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: AnimatedSplashScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        fontFamily: "Baloo Bhaijaan 2",
+        
+      ),
+      home: const AnimatedSplashView(),
     );
   }
 }
