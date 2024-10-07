@@ -4,5 +4,8 @@
   "password": "كلمه السر",
   "loginButton": "تسجيل الدخول",
   "SaveLogin": "حفظ معلومات الدخول",
-  "LosePassword": "نسيت كلمة المرور ؟"
+  "LosePassword": "نسيت كلمة المرور ؟",
+  "or": "او",
+  "dontHaveAcc": "ليس لديك حساب ؟",
+  "createAcc": "إنشاء حساب"
 }

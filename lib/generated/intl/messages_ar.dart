@@ -25,8 +25,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "LosePassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور ؟"),
         "SaveLogin": MessageLookupByLibrary.simpleMessage("حفظ معلومات الدخول"),
+        "createAcc": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
+        "dontHaveAcc": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الألكتروني"),
         "loginButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمه السر"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(
             "أهلاً بعودتك الى تعافي سجل الدخول الأن")

@@ -4,5 +4,8 @@
   "password": "Password",
   "loginButton": "Login",
   "SaveLogin": "Save Login Information",
-  "LosePassword": "Forget Password ?"
+  "LosePassword": "Forget Password ?",
+  "or":"Or",
+  "dontHaveAcc":"Don't Have An Account ?",
+  "createAcc":"Create Account"
 }

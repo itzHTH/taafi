@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:taafi/constants.dart';
-import 'package:taafi/views/login_view.dart';
+import 'package:taafi/views/login%20view/login_view.dart';
 import 'package:page_transition/page_transition.dart';
 
 class AnimatedSplashView extends StatefulWidget {
   const AnimatedSplashView({super.key});
+  static String id = "AnimatedSplashView";
 
   @override
   State<AnimatedSplashView> createState() => _AnimatedSplashViewState();
 }
 
 class _AnimatedSplashViewState extends State<AnimatedSplashView> {
-  
   @override
   void initState() {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,

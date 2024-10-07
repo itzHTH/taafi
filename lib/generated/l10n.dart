@@ -109,6 +109,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Or`
+  String get or {
+    return Intl.message(
+      'Or',
+      name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't Have An Account ?`
+  String get dontHaveAcc {
+    return Intl.message(
+      'Don\'t Have An Account ?',
+      name: 'dontHaveAcc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Account`
+  String get createAcc {
+    return Intl.message(
+      'Create Account',
+      name: 'createAcc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

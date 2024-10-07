@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/views/animated/animated_splash_screen.dart';
+import 'package:taafi/views/login%20view/login_view.dart';
+
+import 'package:taafi/views/register%20view/register_view.dart';
 
 import 'generated/l10n.dart';
 
@@ -29,7 +32,12 @@ class MyApp extends StatelessWidget {
         fontFamily: "Baloo Bhaijaan 2",
         colorScheme: const ColorScheme.light(primary: kPrimaryColor),
       ),
-      home: const AnimatedSplashView(),
+      routes: {
+        RegisterView.id: (context) => const RegisterView(),
+        AnimatedSplashView.id: (context) => const AnimatedSplashView(),
+        LoginView.id: (context) => const LoginView(),
+      },
+      initialRoute: AnimatedSplashView.id,
     );
   }
 }

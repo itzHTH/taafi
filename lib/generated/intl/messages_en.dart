@@ -26,8 +26,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forget Password ?"),
         "SaveLogin":
             MessageLookupByLibrary.simpleMessage("Save Login Information"),
+        "createAcc": MessageLookupByLibrary.simpleMessage("Create Account"),
+        "dontHaveAcc":
+            MessageLookupByLibrary.simpleMessage("Don\'t Have An Account ?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
+        "or": MessageLookupByLibrary.simpleMessage("Or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(
             "Welcome Back To Taafi Login Now")
