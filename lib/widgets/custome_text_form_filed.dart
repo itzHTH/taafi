@@ -31,7 +31,9 @@ class CustomTextFormFiled extends StatelessWidget {
           ),
           suffixIcon: suffixIcon,
           hintText: hint,
-          hintStyle: TextStyle(color: kPrimaryColor.withOpacity(0.73))),
+          hintStyle: TextStyle(
+              color: kPrimaryColor.withOpacity(0.73),
+              fontWeight: FontWeight.w300)),
     );
   }
 }

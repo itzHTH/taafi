@@ -7,5 +7,9 @@
   "LosePassword": "Forget Password ?",
   "or":"Or",
   "dontHaveAcc":"Don't Have An Account ?",
-  "createAcc":"Create Account"
+  "createAcc":"Create Account",
+  "username":"Username",
+  "rePassword": "ReWrite Password",
+  "HaveAcc":"Do You Have an Account"
+
 }

@@ -139,6 +139,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Username`
+  String get username {
+    return Intl.message(
+      'Username',
+      name: 'username',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ReWrite Password`
+  String get rePassword {
+    return Intl.message(
+      'ReWrite Password',
+      name: 'rePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Do You Have an Account`
+  String get HaveAcc {
+    return Intl.message(
+      'Do You Have an Account',
+      name: 'HaveAcc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
