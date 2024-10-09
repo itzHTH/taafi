@@ -7,7 +7,6 @@ class RegisterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Image.asset(
@@ -21,7 +20,6 @@ class RegisterView extends StatelessWidget {
                   border: Border(
                       top: BorderSide(color: Colors.black.withOpacity(0.35)))),
               height: 480,
-              width: double.infinity,
               child: const SingleChildScrollView(child: RegisterForm()),
             ),
           ),
