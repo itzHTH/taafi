@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
+import 'package:taafi/views/info%20register%20view/info_register.dart';
 import 'package:taafi/widgets/ask_row.dart';
 import 'package:taafi/widgets/custome_text_form_filed.dart';
 
@@ -13,8 +14,10 @@ class RegisterForm extends StatelessWidget {
   final sizedBox = const SizedBox(
     height: 14,
   );
+  final double radius = 20;
   @override
   Widget build(BuildContext context) {
+   
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30.0),
       child: Column(
@@ -30,18 +33,31 @@ class RegisterForm extends StatelessWidget {
             ),
           ),
           CustomTextFormFiled(
+            radius: radius,
               hint: S.of(context).username,
-              prefixIcon: FontAwesomeIcons.user,
+              prefixIcon: const Icon(
+                FontAwesomeIcons.user,
+                color: kPrimaryColor,
+              ),
               padding: edgeInsets),
           sizedBox,
           CustomTextFormFiled(
+            radius: radius,
               hint: S.of(context).email,
-              prefixIcon: FontAwesomeIcons.envelope,
+               keyboardType: TextInputType.emailAddress,
+              prefixIcon: const Icon(
+                FontAwesomeIcons.envelope,
+                color: kPrimaryColor,
+              ),
               padding: edgeInsets),
           sizedBox,
           CustomTextFormFiled(
+            radius: radius,
               hint: S.of(context).password,
-              prefixIcon: FontAwesomeIcons.file,
+              prefixIcon: const Icon(
+                FontAwesomeIcons.file,
+                color: kPrimaryColor,
+              ),
               suffixIcon: const Icon(
                 FontAwesomeIcons.eye,
                 color: kPrimaryColor,
@@ -49,13 +65,23 @@ class RegisterForm extends StatelessWidget {
               padding: edgeInsets),
           sizedBox,
           CustomTextFormFiled(
+            radius: radius,
               hint: S.of(context).rePassword,
-              prefixIcon: FontAwesomeIcons.file,
+              prefixIcon: const Icon(
+                FontAwesomeIcons.file,
+                color: kPrimaryColor,
+              ),
               padding: edgeInsets),
           const SizedBox(
             height: 35,
           ),
-          CustomButton(height: 60, text: S.of(context).createAcc),
+          CustomButton(
+            height: 60,
+            text: S.of(context).createAcc,
+            onTap: () {
+              Navigator.pushNamed(context, InfoRegister.id);
+            },
+          ),
           const SizedBox(
             height: 25,
           ),

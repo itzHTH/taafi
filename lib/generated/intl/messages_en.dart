@@ -22,19 +22,50 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Age": MessageLookupByLibrary.simpleMessage("Age"),
+        "AlAnbar": MessageLookupByLibrary.simpleMessage("Al-Anbar"),
+        "Babil": MessageLookupByLibrary.simpleMessage("Babil"),
+        "Baghdad": MessageLookupByLibrary.simpleMessage("Baghdad"),
+        "Basra": MessageLookupByLibrary.simpleMessage("Basra"),
+        "DhiQar": MessageLookupByLibrary.simpleMessage("DhiQar"),
+        "Diyala": MessageLookupByLibrary.simpleMessage("Diyala"),
+        "Duhok": MessageLookupByLibrary.simpleMessage("Duhok"),
+        "EnterPhone": MessageLookupByLibrary.simpleMessage(
+            "Please Enter Your Phone Number"),
+        "EnterTheThird":
+            MessageLookupByLibrary.simpleMessage("Enter Your FullName here"),
+        "Erbil": MessageLookupByLibrary.simpleMessage("Erbil"),
+        "Governorate": MessageLookupByLibrary.simpleMessage("Governorate"),
+        "Halabja": MessageLookupByLibrary.simpleMessage("Halabja"),
         "HaveAcc":
-            MessageLookupByLibrary.simpleMessage("Do You Have an Account"),
+            MessageLookupByLibrary.simpleMessage("Do You Have an Account ?"),
+        "Karbala": MessageLookupByLibrary.simpleMessage("Karbala"),
+        "Kirkuk": MessageLookupByLibrary.simpleMessage("Kirkuk"),
         "LosePassword":
             MessageLookupByLibrary.simpleMessage("Forget Password ?"),
+        "Maysan": MessageLookupByLibrary.simpleMessage("Maysan"),
+        "Muthanna": MessageLookupByLibrary.simpleMessage("Muthanna"),
+        "Najaf": MessageLookupByLibrary.simpleMessage("Najaf"),
+        "Nineveh": MessageLookupByLibrary.simpleMessage("Ninawa"),
+        "Phone": MessageLookupByLibrary.simpleMessage("Phone Number"),
+        "Qadisiyah": MessageLookupByLibrary.simpleMessage("Qadisiyah"),
+        "Saladin": MessageLookupByLibrary.simpleMessage("Salah Al-Din"),
+        "SaveInfo": MessageLookupByLibrary.simpleMessage("Save Information"),
         "SaveLogin":
             MessageLookupByLibrary.simpleMessage("Save Login Information"),
+        "Sulaymaniyah": MessageLookupByLibrary.simpleMessage("Sulaymaniyah"),
+        "ThirdName": MessageLookupByLibrary.simpleMessage("FullName"),
+        "Wasit": MessageLookupByLibrary.simpleMessage("Wasit"),
         "createAcc": MessageLookupByLibrary.simpleMessage("Create Account"),
         "dontHaveAcc":
             MessageLookupByLibrary.simpleMessage("Don\'t Have An Account ?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "enterAge": MessageLookupByLibrary.simpleMessage("Enter Your Age here"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "personalInfo":
+            MessageLookupByLibrary.simpleMessage("Personal Information"),
         "rePassword": MessageLookupByLibrary.simpleMessage("ReWrite Password"),
         "username": MessageLookupByLibrary.simpleMessage("Username"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(

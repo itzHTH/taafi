@@ -22,16 +22,47 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Age": MessageLookupByLibrary.simpleMessage("العمر"),
+        "AlAnbar": MessageLookupByLibrary.simpleMessage("الأنبار"),
+        "Babil": MessageLookupByLibrary.simpleMessage("بابل"),
+        "Baghdad": MessageLookupByLibrary.simpleMessage("بغداد"),
+        "Basra": MessageLookupByLibrary.simpleMessage("بصره"),
+        "DhiQar": MessageLookupByLibrary.simpleMessage("ذي قار"),
+        "Diyala": MessageLookupByLibrary.simpleMessage("ديالى"),
+        "Duhok": MessageLookupByLibrary.simpleMessage("دهوك"),
+        "EnterPhone":
+            MessageLookupByLibrary.simpleMessage("يرجى إدخال رقم الهاتف"),
+        "EnterTheThird":
+            MessageLookupByLibrary.simpleMessage("أدخل أسمك الثلاثي هنا"),
+        "Erbil": MessageLookupByLibrary.simpleMessage("اربيل"),
+        "Governorate": MessageLookupByLibrary.simpleMessage("محافظه"),
+        "Halabja": MessageLookupByLibrary.simpleMessage("حلبجه"),
         "HaveAcc": MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل ؟"),
+        "Karbala": MessageLookupByLibrary.simpleMessage("كربلاء"),
+        "Kirkuk": MessageLookupByLibrary.simpleMessage("كركوك"),
         "LosePassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور ؟"),
+        "Maysan": MessageLookupByLibrary.simpleMessage("ميسان"),
+        "Muthanna": MessageLookupByLibrary.simpleMessage("المثنى"),
+        "Najaf": MessageLookupByLibrary.simpleMessage("النجف"),
+        "Nineveh": MessageLookupByLibrary.simpleMessage("نينوى"),
+        "Phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+        "Qadisiyah": MessageLookupByLibrary.simpleMessage("القادسيه"),
+        "Saladin": MessageLookupByLibrary.simpleMessage("صلاح الدين"),
+        "SaveInfo": MessageLookupByLibrary.simpleMessage("حفظ المعلومات"),
         "SaveLogin": MessageLookupByLibrary.simpleMessage("حفظ معلومات الدخول"),
+        "Sulaymaniyah": MessageLookupByLibrary.simpleMessage("السليمانيه"),
+        "ThirdName": MessageLookupByLibrary.simpleMessage("الأسم الثلاثي"),
+        "Wasit": MessageLookupByLibrary.simpleMessage("واسط"),
         "createAcc": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "dontHaveAcc": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الألكتروني"),
+        "enterAge": MessageLookupByLibrary.simpleMessage("أدخل عمرك هنا"),
         "loginButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "personalInfo":
+            MessageLookupByLibrary.simpleMessage("المعلومات الشخصية"),
         "rePassword": MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "username": MessageLookupByLibrary.simpleMessage("أسم المستخدم"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(

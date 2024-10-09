@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/views/animated/animated_splash_screen.dart';
+import 'package:taafi/views/info%20register%20view/info_register.dart';
 import 'package:taafi/views/login%20view/login_view.dart';
 
 import 'package:taafi/views/register%20view/register_view.dart';
@@ -33,9 +34,10 @@ class MyApp extends StatelessWidget {
         colorScheme: const ColorScheme.light(primary: kPrimaryColor),
       ),
       routes: {
-        RegisterView.id: (context) => const RegisterView(),
         AnimatedSplashView.id: (context) => const AnimatedSplashView(),
         LoginView.id: (context) => const LoginView(),
+        RegisterView.id: (context) => const RegisterView(),
+        InfoRegister.id: (context) => const InfoRegister(),
       },
       initialRoute: AnimatedSplashView.id,
     );

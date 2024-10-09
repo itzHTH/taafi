@@ -11,9 +11,10 @@ import '../../widgets/custome_text_form_filed.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});
-
+final double radius = 20;
   @override
   Widget build(BuildContext context) {
+    
     return Column(children: [
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 37.0),
@@ -31,17 +32,26 @@ class LoginForm extends StatelessWidget {
               ),
             ),
             CustomTextFormFiled(
+              radius: radius,
               padding: const EdgeInsets.symmetric(vertical: 20),
               hint: S.of(context).email,
-              prefixIcon: FontAwesomeIcons.envelope,
+              keyboardType: TextInputType.emailAddress,
+              prefixIcon: const Icon(
+                FontAwesomeIcons.envelope,
+                color: kPrimaryColor,
+              ),
             ),
             const SizedBox(
               height: 22,
             ),
             CustomTextFormFiled(
+            radius: radius,
               padding: const EdgeInsets.symmetric(vertical: 20),
               hint: S.of(context).password,
-              prefixIcon: FontAwesomeIcons.userLock,
+              prefixIcon: const Icon(
+                FontAwesomeIcons.file,
+                color: kPrimaryColor,
+              ),
               suffixIcon: const Icon(
                 FontAwesomeIcons.eye,
                 color: kPrimaryColor,

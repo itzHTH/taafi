@@ -160,11 +160,291 @@ class S {
     );
   }
 
-  /// `Do You Have an Account`
+  /// `Do You Have an Account ?`
   String get HaveAcc {
     return Intl.message(
-      'Do You Have an Account',
+      'Do You Have an Account ?',
       name: 'HaveAcc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Information`
+  String get personalInfo {
+    return Intl.message(
+      'Personal Information',
+      name: 'personalInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `FullName`
+  String get ThirdName {
+    return Intl.message(
+      'FullName',
+      name: 'ThirdName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your FullName here`
+  String get EnterTheThird {
+    return Intl.message(
+      'Enter Your FullName here',
+      name: 'EnterTheThird',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone Number`
+  String get Phone {
+    return Intl.message(
+      'Phone Number',
+      name: 'Phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please Enter Your Phone Number`
+  String get EnterPhone {
+    return Intl.message(
+      'Please Enter Your Phone Number',
+      name: 'EnterPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Erbil`
+  String get Erbil {
+    return Intl.message(
+      'Erbil',
+      name: 'Erbil',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Babil`
+  String get Babil {
+    return Intl.message(
+      'Babil',
+      name: 'Babil',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Baghdad`
+  String get Baghdad {
+    return Intl.message(
+      'Baghdad',
+      name: 'Baghdad',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Basra`
+  String get Basra {
+    return Intl.message(
+      'Basra',
+      name: 'Basra',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `DhiQar`
+  String get DhiQar {
+    return Intl.message(
+      'DhiQar',
+      name: 'DhiQar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Duhok`
+  String get Duhok {
+    return Intl.message(
+      'Duhok',
+      name: 'Duhok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Diyala`
+  String get Diyala {
+    return Intl.message(
+      'Diyala',
+      name: 'Diyala',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Halabja`
+  String get Halabja {
+    return Intl.message(
+      'Halabja',
+      name: 'Halabja',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Karbala`
+  String get Karbala {
+    return Intl.message(
+      'Karbala',
+      name: 'Karbala',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Kirkuk`
+  String get Kirkuk {
+    return Intl.message(
+      'Kirkuk',
+      name: 'Kirkuk',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Muthanna`
+  String get Muthanna {
+    return Intl.message(
+      'Muthanna',
+      name: 'Muthanna',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Maysan`
+  String get Maysan {
+    return Intl.message(
+      'Maysan',
+      name: 'Maysan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ninawa`
+  String get Nineveh {
+    return Intl.message(
+      'Ninawa',
+      name: 'Nineveh',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Najaf`
+  String get Najaf {
+    return Intl.message(
+      'Najaf',
+      name: 'Najaf',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Qadisiyah`
+  String get Qadisiyah {
+    return Intl.message(
+      'Qadisiyah',
+      name: 'Qadisiyah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Salah Al-Din`
+  String get Saladin {
+    return Intl.message(
+      'Salah Al-Din',
+      name: 'Saladin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sulaymaniyah`
+  String get Sulaymaniyah {
+    return Intl.message(
+      'Sulaymaniyah',
+      name: 'Sulaymaniyah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wasit`
+  String get Wasit {
+    return Intl.message(
+      'Wasit',
+      name: 'Wasit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Al-Anbar`
+  String get AlAnbar {
+    return Intl.message(
+      'Al-Anbar',
+      name: 'AlAnbar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Governorate`
+  String get Governorate {
+    return Intl.message(
+      'Governorate',
+      name: 'Governorate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Age`
+  String get Age {
+    return Intl.message(
+      'Age',
+      name: 'Age',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Age here`
+  String get enterAge {
+    return Intl.message(
+      'Enter Your Age here',
+      name: 'enterAge',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save Information`
+  String get SaveInfo {
+    return Intl.message(
+      'Save Information',
+      name: 'SaveInfo',
       desc: '',
       args: [],
     );

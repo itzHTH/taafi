@@ -17,7 +17,8 @@ class AskRow extends StatelessWidget {
       children: [
         Text(
           fText,
-          style: const TextStyle(color: kPrimaryColor, fontSize: 15),
+          style: const TextStyle(
+              color: kPrimaryColor, fontSize: 15, fontWeight: FontWeight.w500),
         ),
         const SizedBox(
           width: 6,
