@@ -449,6 +449,126 @@ class S {
       args: [],
     );
   }
+
+  /// `Search a Doctor or Specialty`
+  String get searchMain {
+    return Intl.message(
+      'Search a Doctor or Specialty',
+      name: 'searchMain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Work Time`
+  String get workTime {
+    return Intl.message(
+      'Work Time',
+      name: 'workTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book Now`
+  String get bookNow {
+    return Intl.message(
+      'Book Now',
+      name: 'bookNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dr.`
+  String get Dr {
+    return Intl.message(
+      'Dr.',
+      name: 'Dr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Specific`
+  String get specific {
+    return Intl.message(
+      'Specific',
+      name: 'specific',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `View All`
+  String get viewAll {
+    return Intl.message(
+      'View All',
+      name: 'viewAll',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Specifics`
+  String get specifics {
+    return Intl.message(
+      'Specifics',
+      name: 'specifics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Most Popular`
+  String get popularDoctors {
+    return Intl.message(
+      'Most Popular',
+      name: 'popularDoctors',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home Page`
+  String get homePage {
+    return Intl.message(
+      'Home Page',
+      name: 'homePage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Messages`
+  String get ChatPage {
+    return Intl.message(
+      'Messages',
+      name: 'ChatPage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Schedule`
+  String get CalenderPage {
+    return Intl.message(
+      'Schedule',
+      name: 'CalenderPage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get ProfilePage {
+    return Intl.message(
+      'Profile',
+      name: 'ProfilePage',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -38,5 +38,17 @@
   "Governorate": "Governorate",
   "Age": "Age",
   "enterAge": "Enter Your Age here",
-  "SaveInfo": "Save Information"
+  "SaveInfo": "Save Information",
+  "searchMain": "Search a Doctor or Specialty",
+  "workTime": "Work Time",
+  "bookNow": "Book Now",
+  "Dr": "Dr.",
+  "specific": "Specific",
+  "viewAll": "View All",
+  "specifics": "Specifics",
+  "popularDoctors": "Most Popular",
+  "homePage": "Home Page",
+  "ChatPage": "Messages",
+  "CalenderPage": "Schedule",
+  "ProfilePage" : "Profile"
 }

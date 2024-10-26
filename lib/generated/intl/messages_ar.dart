@@ -27,8 +27,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "Babil": MessageLookupByLibrary.simpleMessage("بابل"),
         "Baghdad": MessageLookupByLibrary.simpleMessage("بغداد"),
         "Basra": MessageLookupByLibrary.simpleMessage("بصره"),
+        "CalenderPage": MessageLookupByLibrary.simpleMessage("جدول المواعيد"),
+        "ChatPage": MessageLookupByLibrary.simpleMessage("الرسائل"),
         "DhiQar": MessageLookupByLibrary.simpleMessage("ذي قار"),
         "Diyala": MessageLookupByLibrary.simpleMessage("ديالى"),
+        "Dr": MessageLookupByLibrary.simpleMessage("د."),
         "Duhok": MessageLookupByLibrary.simpleMessage("دهوك"),
         "EnterPhone":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال رقم الهاتف"),
@@ -47,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Najaf": MessageLookupByLibrary.simpleMessage("النجف"),
         "Nineveh": MessageLookupByLibrary.simpleMessage("نينوى"),
         "Phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+        "ProfilePage": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "Qadisiyah": MessageLookupByLibrary.simpleMessage("القادسيه"),
         "Saladin": MessageLookupByLibrary.simpleMessage("صلاح الدين"),
         "SaveInfo": MessageLookupByLibrary.simpleMessage("حفظ المعلومات"),
@@ -54,18 +58,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "Sulaymaniyah": MessageLookupByLibrary.simpleMessage("السليمانيه"),
         "ThirdName": MessageLookupByLibrary.simpleMessage("الأسم الثلاثي"),
         "Wasit": MessageLookupByLibrary.simpleMessage("واسط"),
+        "bookNow": MessageLookupByLibrary.simpleMessage("احجز الأن"),
         "createAcc": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "dontHaveAcc": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الألكتروني"),
         "enterAge": MessageLookupByLibrary.simpleMessage("أدخل عمرك هنا"),
+        "homePage": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
         "loginButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "personalInfo":
             MessageLookupByLibrary.simpleMessage("المعلومات الشخصية"),
+        "popularDoctors": MessageLookupByLibrary.simpleMessage("الأكثر شهرة"),
         "rePassword": MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "searchMain":
+            MessageLookupByLibrary.simpleMessage("ابحث عن طبيب او تخصص"),
+        "specific": MessageLookupByLibrary.simpleMessage("أختصاص"),
+        "specifics": MessageLookupByLibrary.simpleMessage("التخصصات"),
         "username": MessageLookupByLibrary.simpleMessage("أسم المستخدم"),
+        "viewAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(
-            "أهلاً بعودتك الى تعافي سجل الدخول الأن")
+            "أهلاً بعودتك الى تعافي سجل الدخول الأن"),
+        "workTime": MessageLookupByLibrary.simpleMessage("اوقات العمل")
       };
 }

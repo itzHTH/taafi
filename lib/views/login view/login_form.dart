@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
+import 'package:taafi/views/home%20view/home_view.dart';
 import 'package:taafi/views/register%20view/register_view.dart';
 import 'package:taafi/widgets/ask_row.dart';
 import 'package:taafi/widgets/custom_buttom.dart';
 import 'package:taafi/widgets/custom_checkbox.dart';
+import 'package:taafi/widgets/custom_icon.dart';
 
 import '../../widgets/custome_text_form_filed.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});
-final double radius = 20;
+  final double radius = 20;
   @override
   Widget build(BuildContext context) {
-    
     return Column(children: [
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 37.0),
@@ -36,21 +37,29 @@ final double radius = 20;
               padding: const EdgeInsets.symmetric(vertical: 20),
               hint: S.of(context).email,
               keyboardType: TextInputType.emailAddress,
-              prefixIcon: const Icon(
-                FontAwesomeIcons.envelope,
-                color: kPrimaryColor,
+              prefixIcon: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: CustomIcon(
+                  color: kPrimaryColor,
+                  icon: "email",
+                  size: 20,
+                ),
               ),
             ),
             const SizedBox(
               height: 22,
             ),
             CustomTextFormFiled(
-            radius: radius,
+              radius: radius,
               padding: const EdgeInsets.symmetric(vertical: 20),
               hint: S.of(context).password,
-              prefixIcon: const Icon(
-                FontAwesomeIcons.file,
-                color: kPrimaryColor,
+              prefixIcon: const Padding(
+                padding: EdgeInsets.all(12.0),
+                child: CustomIcon(
+                  color: kPrimaryColor,
+                  icon: "password",
+                  size: 20,
+                ),
               ),
               suffixIcon: const Icon(
                 FontAwesomeIcons.eye,
@@ -63,6 +72,7 @@ final double radius = 20;
             CustomButton(
               text: S.of(context).loginButton,
               height: 60,
+              onTap: () => Navigator.pushReplacementNamed(context, HomeView.id),
             ),
             const SizedBox(
               height: 10,

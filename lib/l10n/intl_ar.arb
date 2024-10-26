@@ -38,5 +38,17 @@
   "Governorate": "محافظه",
   "Age": "العمر",
   "enterAge": "أدخل عمرك هنا",
-  "SaveInfo": "حفظ المعلومات"
+  "SaveInfo": "حفظ المعلومات",
+  "searchMain": "ابحث عن طبيب او تخصص",
+  "workTime": "اوقات العمل",
+  "bookNow": "احجز الأن",
+  "Dr": "د.",
+  "specific": "أختصاص",
+  "viewAll": "عرض الكل",
+  "specifics": "التخصصات",
+  "popularDoctors": "الأكثر شهرة",
+  "homePage": "الصفحة الرئيسية",
+  "ChatPage": "الرسائل",
+  "CalenderPage": "جدول المواعيد",
+  "ProfilePage": "الملف الشخصي"
 }

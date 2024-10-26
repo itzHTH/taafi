@@ -27,8 +27,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "Babil": MessageLookupByLibrary.simpleMessage("Babil"),
         "Baghdad": MessageLookupByLibrary.simpleMessage("Baghdad"),
         "Basra": MessageLookupByLibrary.simpleMessage("Basra"),
+        "CalenderPage": MessageLookupByLibrary.simpleMessage("Schedule"),
+        "ChatPage": MessageLookupByLibrary.simpleMessage("Messages"),
         "DhiQar": MessageLookupByLibrary.simpleMessage("DhiQar"),
         "Diyala": MessageLookupByLibrary.simpleMessage("Diyala"),
+        "Dr": MessageLookupByLibrary.simpleMessage("Dr."),
         "Duhok": MessageLookupByLibrary.simpleMessage("Duhok"),
         "EnterPhone": MessageLookupByLibrary.simpleMessage(
             "Please Enter Your Phone Number"),
@@ -48,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Najaf": MessageLookupByLibrary.simpleMessage("Najaf"),
         "Nineveh": MessageLookupByLibrary.simpleMessage("Ninawa"),
         "Phone": MessageLookupByLibrary.simpleMessage("Phone Number"),
+        "ProfilePage": MessageLookupByLibrary.simpleMessage("Profile"),
         "Qadisiyah": MessageLookupByLibrary.simpleMessage("Qadisiyah"),
         "Saladin": MessageLookupByLibrary.simpleMessage("Salah Al-Din"),
         "SaveInfo": MessageLookupByLibrary.simpleMessage("Save Information"),
@@ -56,19 +60,28 @@ class MessageLookup extends MessageLookupByLibrary {
         "Sulaymaniyah": MessageLookupByLibrary.simpleMessage("Sulaymaniyah"),
         "ThirdName": MessageLookupByLibrary.simpleMessage("FullName"),
         "Wasit": MessageLookupByLibrary.simpleMessage("Wasit"),
+        "bookNow": MessageLookupByLibrary.simpleMessage("Book Now"),
         "createAcc": MessageLookupByLibrary.simpleMessage("Create Account"),
         "dontHaveAcc":
             MessageLookupByLibrary.simpleMessage("Don\'t Have An Account ?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "enterAge": MessageLookupByLibrary.simpleMessage("Enter Your Age here"),
+        "homePage": MessageLookupByLibrary.simpleMessage("Home Page"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "personalInfo":
             MessageLookupByLibrary.simpleMessage("Personal Information"),
+        "popularDoctors": MessageLookupByLibrary.simpleMessage("Most Popular"),
         "rePassword": MessageLookupByLibrary.simpleMessage("ReWrite Password"),
+        "searchMain": MessageLookupByLibrary.simpleMessage(
+            "Search a Doctor or Specialty"),
+        "specific": MessageLookupByLibrary.simpleMessage("Specific"),
+        "specifics": MessageLookupByLibrary.simpleMessage("Specifics"),
         "username": MessageLookupByLibrary.simpleMessage("Username"),
+        "viewAll": MessageLookupByLibrary.simpleMessage("View All"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(
-            "Welcome Back To Taafi Login Now")
+            "Welcome Back To Taafi Login Now"),
+        "workTime": MessageLookupByLibrary.simpleMessage("Work Time")
       };
 }

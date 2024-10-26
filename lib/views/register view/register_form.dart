@@ -4,6 +4,7 @@ import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
 import 'package:taafi/views/info%20register%20view/info_register.dart';
 import 'package:taafi/widgets/ask_row.dart';
+import 'package:taafi/widgets/custom_icon.dart';
 import 'package:taafi/widgets/custome_text_form_filed.dart';
 
 import '../../widgets/custom_buttom.dart';
@@ -17,7 +18,6 @@ class RegisterForm extends StatelessWidget {
   final double radius = 20;
   @override
   Widget build(BuildContext context) {
-   
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30.0),
       child: Column(
@@ -33,30 +33,42 @@ class RegisterForm extends StatelessWidget {
             ),
           ),
           CustomTextFormFiled(
-            radius: radius,
+              radius: radius,
               hint: S.of(context).username,
-              prefixIcon: const Icon(
-                FontAwesomeIcons.user,
-                color: kPrimaryColor,
+              prefixIcon: const Padding(
+                padding: EdgeInsets.all(12.0),
+                child: CustomIcon(
+                  color: kPrimaryColor,
+                  icon: "user-profile",
+                  size: 20,
+                ),
               ),
               padding: edgeInsets),
           sizedBox,
           CustomTextFormFiled(
-            radius: radius,
+              radius: radius,
               hint: S.of(context).email,
-               keyboardType: TextInputType.emailAddress,
-              prefixIcon: const Icon(
-                FontAwesomeIcons.envelope,
-                color: kPrimaryColor,
+              keyboardType: TextInputType.emailAddress,
+              prefixIcon: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: CustomIcon(
+                  color: kPrimaryColor,
+                  icon: "email",
+                  size: 20,
+                ),
               ),
               padding: edgeInsets),
           sizedBox,
           CustomTextFormFiled(
-            radius: radius,
+              radius: radius,
               hint: S.of(context).password,
-              prefixIcon: const Icon(
-                FontAwesomeIcons.file,
-                color: kPrimaryColor,
+              prefixIcon: const Padding(
+                padding: EdgeInsets.all(12.0),
+                child: CustomIcon(
+                  color: kPrimaryColor,
+                  icon: "password",
+                  size: 20,
+                ),
               ),
               suffixIcon: const Icon(
                 FontAwesomeIcons.eye,
@@ -65,11 +77,15 @@ class RegisterForm extends StatelessWidget {
               padding: edgeInsets),
           sizedBox,
           CustomTextFormFiled(
-            radius: radius,
+              radius: radius,
               hint: S.of(context).rePassword,
-              prefixIcon: const Icon(
-                FontAwesomeIcons.file,
-                color: kPrimaryColor,
+              prefixIcon: const Padding(
+                padding: EdgeInsets.all(12.0),
+                child: CustomIcon(
+                  color: kPrimaryColor,
+                  icon: "password",
+                  size: 20,
+                ),
               ),
               padding: edgeInsets),
           const SizedBox(
