@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
-import 'package:taafi/views/info%20register%20view/info_register.dart';
+import 'package:taafi/views/info_register.dart';
 import 'package:taafi/widgets/ask_row.dart';
 import 'package:taafi/widgets/custom_icon.dart';
 import 'package:taafi/widgets/custome_text_form_filed.dart';
 
-import '../../widgets/custom_buttom.dart';
+import 'custom_buttom.dart';
 
 class RegisterForm extends StatelessWidget {
   const RegisterForm({super.key});

@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:taafi/generated/l10n.dart';
 import 'package:taafi/widgets/custom_icon.dart';
 
-import '../../constants.dart';
-import '../../models/doctor_page_view_model.dart';
+import '../constants.dart';
+import '../models/doctor_page_view_model.dart';
 
 class DoctorsPageView extends StatelessWidget {
   const DoctorsPageView(

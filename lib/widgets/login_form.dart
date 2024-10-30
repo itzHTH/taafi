@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
-import 'package:taafi/views/home%20view/home_view.dart';
-import 'package:taafi/views/register%20view/register_view.dart';
+import 'package:taafi/views/home_view.dart';
+import 'package:taafi/views/register_view.dart';
 import 'package:taafi/widgets/ask_row.dart';
 import 'package:taafi/widgets/custom_buttom.dart';
 import 'package:taafi/widgets/custom_checkbox.dart';
 import 'package:taafi/widgets/custom_icon.dart';
 
-import '../../widgets/custome_text_form_filed.dart';
+import 'custome_text_form_filed.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});

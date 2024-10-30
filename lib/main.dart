@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/views/animated/animated_splash_screen.dart';
-import 'package:taafi/views/home%20view/home_view.dart';
-import 'package:taafi/views/info%20register%20view/info_register.dart';
-import 'package:taafi/views/login%20view/login_view.dart';
+import 'package:taafi/views/home_view.dart';
+import 'package:taafi/views/info_register.dart';
+import 'package:taafi/views/login_view.dart';
 
-import 'package:taafi/views/register%20view/register_view.dart';
+import 'package:taafi/views/register_view.dart';
 
 import 'generated/l10n.dart';
 

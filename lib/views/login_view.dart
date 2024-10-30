@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:taafi/views/login%20view/login_form.dart';
+import 'package:taafi/widgets/login_form.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});

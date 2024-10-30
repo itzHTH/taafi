@@ -1,37 +1,13 @@
 import 'package:flutter/material.dart';
-
-import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
-import 'package:taafi/models/doctor_page_view_model.dart';
 import 'package:taafi/models/specifics_model.dart';
-import 'package:taafi/views/home%20view/home_page_view.dart';
-import 'package:taafi/views/home%20view/specific_topics.dart';
 import 'package:taafi/widgets/custom_search_textfield.dart';
-import 'custom_bottom_navigation_bar.dart';
-import 'home_app_bar.dart';
-import 'most_popular_doctor.dart';
+import 'package:taafi/widgets/home_app_bar.dart';
+import 'package:taafi/widgets/home_page_view.dart';
+import 'package:taafi/widgets/most_popular_doctor.dart';
+import 'package:taafi/widgets/specific_topics.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
-
-  static String id = "HomeView";
-
-  @override
-  Widget build(BuildContext context) {
-    List<String> kBNTexts = [
-      S.of(context).ProfilePage,
-      S.of(context).CalenderPage,
-      S.of(context).ChatPage,
-      S.of(context).homePage,
-    ];
-
-    return Scaffold(
-        resizeToAvoidBottomInset: true,
-        backgroundColor: kBgColor,
-        bottomNavigationBar: CustomBottomNavigationBar(kBNTexts: kBNTexts),
-        body: const HomeViewBody());
-  }
-}
+import '../models/doctor_page_view_model.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});

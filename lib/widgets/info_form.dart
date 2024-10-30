@@ -4,7 +4,7 @@ import 'package:taafi/generated/l10n.dart';
 import 'package:taafi/widgets/custom_buttom.dart';
 import 'package:taafi/widgets/custom_drop_down_button.dart';
 
-import '../../widgets/info_text_formfiled.dart';
+import 'info_text_formfiled.dart';
 
 class InfoForm extends StatefulWidget {
   const InfoForm({super.key});

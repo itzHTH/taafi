@@ -2,13 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:taafi/constants.dart';
 
+// ignore: must_be_immutable
 class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({
-    super.key,
-    required this.kBNTexts,
-  });
+  CustomBottomNavigationBar(
+      {super.key,
+      required this.kBNTexts,
+      required this.currentIndex,
+      required this.controller});
 
   final List<String> kBNTexts;
+  int currentIndex = 3;
+  PageController? controller;
 
   @override
   State<CustomBottomNavigationBar> createState() =>
@@ -16,7 +20,6 @@ class CustomBottomNavigationBar extends StatefulWidget {
 }
 
 class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
-  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,7 +33,10 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
             return GestureDetector(
               onTap: () {
                 setState(() {
-                  currentIndex = index;
+                  widget.currentIndex = index;
+                  widget.controller!.jumpToPage(
+                    widget.currentIndex,
+                  );
                 });
               },
               child: Column(
@@ -44,7 +50,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 500),
                       curve: Curves.ease,
-                      color: currentIndex == index
+                      color: widget.currentIndex == index
                           ? kSecondaryColor
                           : Colors.white,
                       height: 55,
@@ -53,7 +59,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.ease,
                         padding: EdgeInsets.only(
-                            bottom: currentIndex == index ? 8.0 : 0),
+                            bottom: widget.currentIndex == index ? 8.0 : 0),
                         child: AnimatedSize(
                           duration: const Duration(milliseconds: 500),
                           curve: Curves.ease,
@@ -62,13 +68,13 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                               padding: const EdgeInsets.only(bottom: 4.0),
                               child: SvgPicture.asset(
                                 kBottomNavigationBarIcons[index],
-                                color: currentIndex == index
+                                color: widget.currentIndex == index
                                     ? Colors.white
                                     : Colors.black,
-                                clipBehavior: currentIndex == index
+                                clipBehavior: widget.currentIndex == index
                                     ? Clip.hardEdge
                                     : Clip.none,
-                                height: currentIndex == index ? 28 : 30,
+                                height: widget.currentIndex == index ? 28 : 30,
                               ),
                             ),
                           ),
@@ -83,7 +89,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                     widget.kBNTexts[index],
                     style: TextStyle(
                         fontSize: 14,
-                        fontWeight: currentIndex == index
+                        fontWeight: widget.currentIndex == index
                             ? FontWeight.w500
                             : FontWeight.w400),
                   ),

@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:taafi/views/info%20register%20view/info_form.dart';
+import 'package:taafi/widgets/register_form.dart';
 
-class InfoRegister extends StatelessWidget {
-  const InfoRegister({super.key});
-
-  static String id = "InfoView";
-
+class RegisterView extends StatelessWidget {
+  const RegisterView({super.key});
+  static String id = "RegisterView";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           Image.asset(
-            "assets/images/personal_info.png",
+            "assets/images/doctor_register.png",
           ),
           Align(
             alignment: Alignment.bottomCenter,
@@ -22,8 +20,7 @@ class InfoRegister extends StatelessWidget {
                   border: Border(
                       top: BorderSide(color: Colors.black.withOpacity(0.35)))),
               height: 480,
-              width: double.infinity,
-              child: const SingleChildScrollView(child: InfoForm()),
+              child: const SingleChildScrollView(child: RegisterForm()),
             ),
           ),
         ],
