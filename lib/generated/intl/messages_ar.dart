@@ -73,8 +73,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "rePassword": MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "searchMain":
             MessageLookupByLibrary.simpleMessage("ابحث عن طبيب او تخصص"),
+        "searchSpecfic": MessageLookupByLibrary.simpleMessage("ابحث عن تخصص"),
         "specific": MessageLookupByLibrary.simpleMessage("أختصاص"),
         "specifics": MessageLookupByLibrary.simpleMessage("التخصصات"),
+        "specificsMed": MessageLookupByLibrary.simpleMessage("التخصصات الطبية"),
         "username": MessageLookupByLibrary.simpleMessage("أسم المستخدم"),
         "viewAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(

@@ -569,6 +569,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Medical Specialties`
+  String get specificsMed {
+    return Intl.message(
+      'Medical Specialties',
+      name: 'specificsMed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search a Specialty`
+  String get searchSpecfic {
+    return Intl.message(
+      'Search a Specialty',
+      name: 'searchSpecfic',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -7,6 +7,7 @@ import 'package:taafi/views/info_register.dart';
 import 'package:taafi/views/login_view.dart';
 
 import 'package:taafi/views/register_view.dart';
+import 'package:taafi/views/specific_view.dart';
 
 import 'generated/l10n.dart';
 
@@ -40,6 +41,8 @@ class MyApp extends StatelessWidget {
         RegisterView.id: (context) => const RegisterView(),
         InfoRegister.id: (context) => const InfoRegister(),
         HomeView.id: (context) => const HomeView(),
+       SpecificView.id : (context) => const SpecificView(),
+
       },
       initialRoute: AnimatedSplashView.id,
     );

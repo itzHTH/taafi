@@ -76,8 +76,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "rePassword": MessageLookupByLibrary.simpleMessage("ReWrite Password"),
         "searchMain": MessageLookupByLibrary.simpleMessage(
             "Search a Doctor or Specialty"),
+        "searchSpecfic":
+            MessageLookupByLibrary.simpleMessage("Search a Specialty"),
         "specific": MessageLookupByLibrary.simpleMessage("Specific"),
         "specifics": MessageLookupByLibrary.simpleMessage("Specifics"),
+        "specificsMed":
+            MessageLookupByLibrary.simpleMessage("Medical Specialties"),
         "username": MessageLookupByLibrary.simpleMessage("Username"),
         "viewAll": MessageLookupByLibrary.simpleMessage("View All"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage(

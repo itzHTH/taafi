@@ -4,10 +4,11 @@ import 'package:taafi/models/specifics_model.dart';
 class SpecificsItem extends StatelessWidget {
   const SpecificsItem({
     super.key,
-    required this.specificsModel,
+    required this.specificsModel, required this.radius,
   });
 
   final SpecificsModel specificsModel;
+  final double radius;
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +18,11 @@ class SpecificsItem extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CircleAvatar(
-            radius: 42,
+            radius: radius,
             backgroundColor: const Color(0xff3481B9).withOpacity(.31),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(30),
-              child: Image.asset(
-                specificsModel.image,
-                height: 56,
-              ),
+            child: Image.asset(
+              specificsModel.image,
+              height: 56,
             ),
           ),
           Container(

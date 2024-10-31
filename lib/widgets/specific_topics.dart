@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
 import 'package:taafi/models/specifics_model.dart';
+import 'package:taafi/views/specific_view.dart';
 import 'package:taafi/widgets/custom_icon.dart';
 import 'package:taafi/widgets/specific_item.dart';
 
@@ -23,7 +24,9 @@ class SpecificsTopics extends StatelessWidget {
           child: Row(
             children: [
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, SpecificView.id);
+                },
                 child: Text(
                   S.of(context).viewAll,
                   style: const TextStyle(
@@ -65,6 +68,7 @@ class SpecificsTopics extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 4.0),
                   child: SpecificsItem(
                     specificsModel: specificList[index],
+                    radius: 40,
                   ),
                 );
               },

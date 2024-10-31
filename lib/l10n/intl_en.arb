@@ -50,5 +50,7 @@
   "homePage": "Home Page",
   "ChatPage": "Messages",
   "CalenderPage": "Schedule",
-  "ProfilePage" : "Profile"
+  "ProfilePage": "Profile",
+  "specificsMed": "Medical Specialties",
+  "searchSpecfic" : "Search a Specialty"
 }

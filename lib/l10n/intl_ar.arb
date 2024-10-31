@@ -50,5 +50,7 @@
   "homePage": "الصفحة الرئيسية",
   "ChatPage": "الرسائل",
   "CalenderPage": "جدول المواعيد",
-  "ProfilePage": "الملف الشخصي"
+  "ProfilePage": "الملف الشخصي",
+  "specificsMed": "التخصصات الطبية",
+  "searchSpecfic": "ابحث عن تخصص"
 }
