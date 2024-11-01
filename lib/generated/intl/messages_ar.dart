@@ -61,6 +61,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "bookNow": MessageLookupByLibrary.simpleMessage("احجز الأن"),
         "createAcc": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "dontHaveAcc": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟"),
+        "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الألكتروني"),
         "enterAge": MessageLookupByLibrary.simpleMessage("أدخل عمرك هنا"),
         "homePage": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
@@ -73,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "rePassword": MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "searchMain":
             MessageLookupByLibrary.simpleMessage("ابحث عن طبيب او تخصص"),
+        "searchMsg": MessageLookupByLibrary.simpleMessage("ابحث في الرسائل"),
         "searchSpecfic": MessageLookupByLibrary.simpleMessage("ابحث عن تخصص"),
         "specific": MessageLookupByLibrary.simpleMessage("أختصاص"),
         "specifics": MessageLookupByLibrary.simpleMessage("التخصصات"),

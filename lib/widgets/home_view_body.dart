@@ -56,6 +56,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
     SpecificsModel(image: "assets/images/murtada.jpg", name: "مرتده"),
     SpecificsModel(image: "assets/images/turk.jpg", name: "تركماني"),
   ];
+  
   @override
   Widget build(BuildContext context) {
     return Padding(

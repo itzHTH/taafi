@@ -52,5 +52,7 @@
   "CalenderPage": "جدول المواعيد",
   "ProfilePage": "الملف الشخصي",
   "specificsMed": "التخصصات الطبية",
-  "searchSpecfic": "ابحث عن تخصص"
+  "searchSpecfic": "ابحث عن تخصص",
+  "edit": "تعديل",
+  "searchMsg": "ابحث في الرسائل"
 }

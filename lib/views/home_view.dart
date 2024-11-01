@@ -43,6 +43,7 @@ class _HomeViewState extends State<HomeView> {
           currentIndex: currentIndex,
         ),
         body: PageView.builder(
+          physics: const NeverScrollableScrollPhysics(),
           controller: controller,
           itemBuilder: (context, index) {
             index = currentIndex;

@@ -36,7 +36,7 @@ class SpecificViewAppBar extends StatelessWidget {
                 Navigator.pop(context);
               },
               child: const CustomIcon(
-                  icon: "arrow-left", color: kPrimaryColor, size: 32)),
+                  icon: "arrow-left", color: kSecondaryColor, size: 32)),
         ],
       ),
     ));

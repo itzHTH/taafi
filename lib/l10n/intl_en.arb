@@ -52,5 +52,7 @@
   "CalenderPage": "Schedule",
   "ProfilePage": "Profile",
   "specificsMed": "Medical Specialties",
-  "searchSpecfic" : "Search a Specialty"
+  "searchSpecfic": "Search a Specialty",
+  "edit": "Edit",
+  "searchMsg" : "Search A Messages"
 }

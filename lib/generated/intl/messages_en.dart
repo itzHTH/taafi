@@ -64,6 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "createAcc": MessageLookupByLibrary.simpleMessage("Create Account"),
         "dontHaveAcc":
             MessageLookupByLibrary.simpleMessage("Don\'t Have An Account ?"),
+        "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "enterAge": MessageLookupByLibrary.simpleMessage("Enter Your Age here"),
         "homePage": MessageLookupByLibrary.simpleMessage("Home Page"),
@@ -76,6 +77,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "rePassword": MessageLookupByLibrary.simpleMessage("ReWrite Password"),
         "searchMain": MessageLookupByLibrary.simpleMessage(
             "Search a Doctor or Specialty"),
+        "searchMsg": MessageLookupByLibrary.simpleMessage("Search A Messages"),
         "searchSpecfic":
             MessageLookupByLibrary.simpleMessage("Search a Specialty"),
         "specific": MessageLookupByLibrary.simpleMessage("Specific"),

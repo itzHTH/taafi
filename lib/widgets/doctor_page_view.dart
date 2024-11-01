@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:taafi/generated/l10n.dart';
@@ -6,19 +7,28 @@ import 'package:taafi/widgets/custom_icon.dart';
 import '../constants.dart';
 import '../models/doctor_page_view_model.dart';
 
-class DoctorsPageView extends StatelessWidget {
+class DoctorsPageView extends StatefulWidget {
   const DoctorsPageView(
       {super.key, required this.doctor, required this.pageController});
   final List<DoctorPageViewModel> doctor;
   final PageController pageController;
+
+  @override
+  State<DoctorsPageView> createState() => _DoctorsPageViewState();
+}
+
+class _DoctorsPageViewState extends State<DoctorsPageView> {
+  int currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 190,
       width: 360,
       child: PageView.builder(
-        controller: pageController,
-        itemCount: doctor.length,
+        onPageChanged: (value) => currentIndex = value,
+        controller: widget.pageController,
+        itemCount: widget.doctor.length,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -36,7 +46,8 @@ class DoctorsPageView extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 40,
-                          backgroundImage: AssetImage(doctor[index].image),
+                          backgroundImage:
+                              AssetImage(widget.doctor[index].image),
                         ),
                         const SizedBox(
                           width: 8,
@@ -45,7 +56,7 @@ class DoctorsPageView extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "${S.of(context).Dr} ${doctor[index].name}",
+                              "${S.of(context).Dr} ${widget.doctor[index].name}",
                               style: const TextStyle(
                                   fontSize: 20,
                                   color: Colors.white,
@@ -54,7 +65,7 @@ class DoctorsPageView extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                    "${S.of(context).specific} ${doctor[index].specific}",
+                                    "${S.of(context).specific} ${widget.doctor[index].specific}",
                                     style: const TextStyle(
                                       fontSize: 16,
                                       color: Color(0xffBBBBBB),
@@ -64,7 +75,7 @@ class DoctorsPageView extends StatelessWidget {
                                 ),
                                 Row(
                                     children: List.generate(
-                                  doctor[index].rate.toInt(),
+                                  widget.doctor[index].rate.toInt(),
                                   (index) {
                                     return const Padding(
                                       padding:
@@ -105,7 +116,7 @@ class DoctorsPageView extends StatelessWidget {
                                   fontSize: 16, color: Color(0xffBBBBBB)),
                             ),
                             Text(
-                              doctor[index].time,
+                              widget.doctor[index].time,
                               style: const TextStyle(
                                   fontSize: 12, color: Color(0xffBBBBBB)),
                             )
