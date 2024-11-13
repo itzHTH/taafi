@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taafi/views/chat_view.dart';
 
 import 'package:taafi/widgets/doctor_message.dart';
 import 'package:taafi/widgets/messages_appbar.dart';
@@ -16,7 +17,11 @@ class MessagesView extends StatelessWidget {
               child: ListView.builder(
             itemCount: 1,
             itemBuilder: (context, index) {
-              return const DoctorMessage();
+              return GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, ChatView.id);
+                  },
+                  child: const DoctorMessage());
             },
           ))
         ],

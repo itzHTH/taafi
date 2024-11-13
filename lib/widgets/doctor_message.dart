@@ -53,11 +53,14 @@ class DoctorMessage extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            const Text(
-                              "د.حامد العلي",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
+                            const Hero(
+                              tag: "DocName",
+                              child: Text(
+                                "د.حامد العلي",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                             Container(
@@ -85,17 +88,20 @@ class DoctorMessage extends StatelessWidget {
         Positioned(
           right: 328,
           bottom: 38,
-          child: Card(
-              shape: const CircleBorder(),
-              elevation: 5,
-              child: SizedBox(
-                width: 50,
-                height: 50,
-                child: Image.asset(
-                  "assets/images/doctor.png",
-                  fit: BoxFit.cover,
-                ),
-              )),
+          child: Hero(
+            tag: "DocImg",
+            child: Card(
+                shape: const CircleBorder(),
+                elevation: 5,
+                child: SizedBox(
+                  width: 50,
+                  height: 50,
+                  child: Image.asset(
+                    "assets/images/doctor.png",
+                    fit: BoxFit.cover,
+                  ),
+                )),
+          ),
         )
       ],
     );

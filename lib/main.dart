@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/views/animated/animated_splash_screen.dart';
+import 'package:taafi/views/chat_view.dart';
 import 'package:taafi/views/home_view.dart';
 import 'package:taafi/views/info_register.dart';
 import 'package:taafi/views/login_view.dart';
@@ -41,8 +42,8 @@ class MyApp extends StatelessWidget {
         RegisterView.id: (context) => const RegisterView(),
         InfoRegister.id: (context) => const InfoRegister(),
         HomeView.id: (context) => const HomeView(),
-       SpecificView.id : (context) => const SpecificView(),
-
+        SpecificView.id: (context) => const SpecificView(),
+        ChatView.id: (context) => const ChatView(),
       },
       initialRoute: AnimatedSplashView.id,
     );

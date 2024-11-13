@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:taafi/constants.dart';
 import 'package:taafi/generated/l10n.dart';
-import 'package:taafi/widgets/custom_icon.dart';
+
 import 'package:taafi/widgets/custom_search_textfield.dart';
 
 class MessagesAppBar extends StatelessWidget {
@@ -13,8 +13,9 @@ class MessagesAppBar extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Spacer(),
             Text(
               S.of(context).edit,
               style: const TextStyle(
@@ -22,14 +23,10 @@ class MessagesAppBar extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: kSecondaryColor),
             ),
-             SizedBox(
-                width: 260, child: CustomSearchTextField(hint: S.of(context).searchMsg)),
-            GestureDetector(
-                onTap: () {
-                  Navigator.pop(context);
-                },
-                child: const CustomIcon(
-                    icon: "arrow-left", color: kSecondaryColor, size: 36)),
+            SizedBox(
+                width: 260,
+                child: CustomSearchTextField(hint: S.of(context).searchMsg)),
+            const Spacer(),
           ],
         ),
       ),
