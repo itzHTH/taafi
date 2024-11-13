@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:taafi/models/specifics_model.dart';
+import 'package:taafi/views/booking_view.dart';
 
 class SpecificsItem extends StatelessWidget {
   const SpecificsItem({
     super.key,
-    required this.specificsModel, required this.radius,
+    required this.specificsModel,
+    required this.radius,
   });
 
   final SpecificsModel specificsModel;
@@ -13,7 +15,9 @@ class SpecificsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushNamed(context, BookingView.id);
+      },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
