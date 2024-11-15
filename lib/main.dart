@@ -4,6 +4,7 @@ import 'package:taafi/constants.dart';
 import 'package:taafi/views/animated/animated_splash_screen.dart';
 import 'package:taafi/views/booking_view.dart';
 import 'package:taafi/views/chat_view.dart';
+import 'package:taafi/views/dates_view.dart';
 import 'package:taafi/views/home_view.dart';
 import 'package:taafi/views/info_register.dart';
 import 'package:taafi/views/login_view.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         SpecificView.id: (context) => const SpecificView(),
         ChatView.id: (context) => const ChatView(),
         BookingView.id: (context) => const BookingView(),
+        DatesView.id: (context) => const DatesView()
       },
       initialRoute: AnimatedSplashView.id,
     );

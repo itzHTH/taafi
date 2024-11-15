@@ -61,7 +61,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "ThirdName": MessageLookupByLibrary.simpleMessage("FullName"),
         "Wasit": MessageLookupByLibrary.simpleMessage("Wasit"),
         "bookNow": MessageLookupByLibrary.simpleMessage("Book Now"),
+        "cancelBooking": MessageLookupByLibrary.simpleMessage("Cancel Booking"),
         "createAcc": MessageLookupByLibrary.simpleMessage("Create Account"),
+        "dateCalender": MessageLookupByLibrary.simpleMessage("Date Schedule"),
         "dontHaveAcc":
             MessageLookupByLibrary.simpleMessage("Don\'t Have An Account ?"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),

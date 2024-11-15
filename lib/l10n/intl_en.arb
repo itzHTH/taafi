@@ -54,5 +54,7 @@
   "specificsMed": "Medical Specialties",
   "searchSpecfic": "Search a Specialty",
   "edit": "Edit",
-  "searchMsg" : "Search A Messages"
+  "searchMsg": "Search A Messages",
+  "dateCalender": "Date Schedule",
+  "cancelBooking": "Cancel Booking"
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taafi/views/dates_view.dart';
 import 'package:taafi/views/messages_view.dart';
 
 import 'package:taafi/widgets/home_view_body.dart';
@@ -17,11 +18,17 @@ const List<String> kBottomNavigationBarIcons = [
 
 List<Widget> kMainPages = [
   Container(
-    color: Colors.black,
+    color: kBgColor,
+    child: const Center(
+      child: Text(
+        "قريباً",
+        style: TextStyle(
+          fontSize: 24,
+        ),
+      ),
+    ),
   ),
-  Container(
-    color: Colors.blue,
-  ),
+  const DatesView(),
   const MessagesView(),
   const HomeViewBody(),
 ];

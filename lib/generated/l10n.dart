@@ -609,6 +609,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Date Schedule`
+  String get dateCalender {
+    return Intl.message(
+      'Date Schedule',
+      name: 'dateCalender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel Booking`
+  String get cancelBooking {
+    return Intl.message(
+      'Cancel Booking',
+      name: 'cancelBooking',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

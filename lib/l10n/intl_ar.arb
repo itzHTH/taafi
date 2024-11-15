@@ -54,5 +54,7 @@
   "specificsMed": "التخصصات الطبية",
   "searchSpecfic": "ابحث عن تخصص",
   "edit": "تعديل",
-  "searchMsg": "ابحث في الرسائل"
+  "searchMsg": "ابحث في الرسائل",
+  "dateCalender": "جدول المواعيد",
+  "cancelBooking" : "إالغاء الحجز"
 }
